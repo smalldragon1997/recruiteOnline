@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>shareOnline</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param> <!--全局范围内环境参数初始化-->  
+        <param-name>contextConfigLocation</param-name>          <!--参数名称-->  
+        <param-value>/WEB-INF/spring-mybatis.xml</param-value>     <!--参数取值-->  
+    </context-param>  
+      
+         <!--以下配置的加载顺序:先 ServletContext >> context-param >> listener >> filter >> servlet >>  spring-->  
+    <!--例:编码过滤器-->  
+    <filter>      <!-- 用来声明filter的相关设定,过滤器可以截取和修改一个Servlet或JSP页面的请求或从一个Servlet或JSP页面发出的响应-->  
+        <filter-name>encodingFilter</filter-name>     <!--指定filter的名字-->  
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class> <!--定义filter的类的名称-->  
+        <async-supported>true</async-supported>     <!--设置是否启用异步支持-->  
+        <init-param><!--用来定义参数,若在Servlet可以使用下列方法来获得:String param_name=getServletContext().getInitParamter("param-name里面的值");-->  
+            <param-name>encoding</param-name>   <!--参数名称-->  
+            <param-value>UTF-8</param-value> <!--参数值-->  
+        </init-param>  
+    </filter>  
+    <filter-mapping><!--用来定义filter所对应的URL-->  
+        <filter-name>encodingFilter</filter-name>     <!--指定对应filter的名字-->  
+        <url-pattern>/*</url-pattern>       <!--指定filter所对应的URL-->  
+    </filter-mapping>  
+      
+    <!--例:spring监听器-->  
+    <listener>        <!--用来设定Listener接口-->  
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class><!--定义Listener的类名称-->  
+    </listener>  
+    <!-- 防止Spring内存溢出监听器  -->  
+    <listener>  
+        <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>  
+    </listener>  
+      
+    <servlet>     <!--用来声明一个servlet的数据 -->    
+        <servlet-name>SpringMVC</servlet-name>  <!--指定servlet的名称-->  
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class> <!--指定servlet的类名称,这里配置了前端控制器-->  
+        <init-param><!--用来定义参数,可有多个init-param。在servlet类中通过getInitParamenter(String name)方法访问初始化参数    -->  
+            <param-name>contextConfigLocation</param-name>  <!--参数名称-->  
+            <param-value>/WEB-INF/spring-mvc.xml</param-value> <!--参数值-->  
+        </init-param>  
+        <load-on-startup>1</load-on-startup><!--当值为正数或零时：Servlet容器先加载数值小的servlet，再依次加载其他数值大的servlet.-->  
+        <async-supported>true</async-supported><!--设置是否启用异步支持-->  
+    </servlet>  
+    <servlet-mapping><!--用来定义servlet所对应的URL-->  
+        <servlet-name>SpringMVC</servlet-name>  <!--指定servlet的名称-->  
+        <url-pattern>/</url-pattern>        <!--指定servlet所对应的URL-->  
+    </servlet-mapping>  
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.css</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.png</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jpg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+</web-app>
