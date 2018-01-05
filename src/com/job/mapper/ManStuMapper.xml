@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<!DOCTYPE mapper  
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.job.dao.ManStuDao">
+  <insert id="insertManStu" parameterType="com.job.entity.ManStu" >
+   		insert into man_stu(man_id,stu_id,operation,operate_time)
+   		values
+   		(#{manId},#{stuId},#{operation},#{operateTime})
+   </insert>
+   <delete id="deleteManStu" >
+   		delete from man_stu where man_id=#{manId,jdbcType=INTEGER} and stu_id=#{stuId,jdbcType=INTEGER}
+   </delete>
+   <update id="updateManStu" parameterType="com.job.entity.ManStu">
+   		update man_stu 
+   		set operation=#{operation},operate_time=#{operateTime}
+   		where man_id=#{manId} and stu_id=#{stuId}
+   </update>
+   <select id="getManStuByManId" parameterType="INTEGER" resultMap="manStu">
+   		select * from man_stu where man_id=#{manId}
+   </select>
+  <!-- 配置映射字段 -->  
+    <resultMap type="com.job.entity.ManStu" id="manStu">  
+        <result property="manId" column="man_id"/>    
+        <result property="stuId" column="stu_id"/>  
+        <result property="operation" column="operation"/>  
+        <result property="operateTime" column="operate_time"/>  
+    </resultMap>
+</mapper>  

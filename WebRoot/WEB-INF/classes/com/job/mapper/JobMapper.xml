@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<!DOCTYPE mapper  
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.job.dao.JobDao">
+   <insert id="insertJob" parameterType="com.job.entity.Job" useGeneratedKeys="true" keyProperty="jobId">
+   		insert into job(name,major,position,salary,duty,address)
+   		values
+   		(#{name},#{major},#{position},#{salary},#{duty},#{address})
+   </insert>
+   <delete id="deleteJob" parameterType="INTEGER">
+   		delete from job where job_id=#{jobId}
+   </delete>
+   <update id="updateJob" parameterType="com.job.entity.Job">
+   		update job 
+   		set name=#{name},major=#{major},position=#{position},salary=#{salary},duty=#{duty},address=#{address}
+   		where job_id=#{jobId}
+   </update>
+   <select id="getJob" parameterType="INTEGER" resultMap="job">
+   		select * from job where job_id=#{jobId}
+   </select>
+   <select id="getAllJobs" resultMap="job">
+   		select * from job
+   </select>
+  <!-- 配置映射字段 -->  
+    <resultMap type="com.job.entity.Job" id="job">  
+        <id property="jobId" column="job_id"/>  
+        <result property="name" column="name"/>  
+        <result property="major" column="major"/>  
+        <result property="position" column="position"/>  
+        <result property="salary" column="salary"/>  
+        <result property="duty" column="duty"/>  
+        <result property="address" column="address"/>   
+    </resultMap>
+</mapper> 

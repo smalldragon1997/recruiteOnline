@@ -8,60 +8,45 @@ package com.job.json;
 
 public class RegisterJson
 {
-    private String registerUsername;
     private String registerEmail;
     private String registerPassword;
     private String registerPasswordAgain;
+    private String asManager[];
+	public RegisterJson(String registerEmail, String registerPassword, String registerPasswordAgain,
+			String[] asManager) {
+		super();
+		this.registerEmail = registerEmail;
+		this.registerPassword = registerPassword;
+		this.registerPasswordAgain = registerPasswordAgain;
+		this.asManager = asManager;
+	}
+	public RegisterJson() {
+		super();
+	}
+	public String getRegisterEmail() {
+		return registerEmail;
+	}
+	public void setRegisterEmail(String registerEmail) {
+		this.registerEmail = registerEmail;
+	}
+	public String getRegisterPassword() {
+		return registerPassword;
+	}
+	public void setRegisterPassword(String registerPassword) {
+		this.registerPassword = registerPassword;
+	}
+	public String getRegisterPasswordAgain() {
+		return registerPasswordAgain;
+	}
+	public void setRegisterPasswordAgain(String registerPasswordAgain) {
+		this.registerPasswordAgain = registerPasswordAgain;
+	}
+	public String[] getAsManager() {
+		return asManager;
+	}
+	public void setAsManager(String[] asManager) {
+		this.asManager = asManager;
+	}
     
-    public RegisterJson(String registerUsername, String registerEmail, String registerPassword, String registerPasswordAgain)
-    {
-        this.registerUsername = registerUsername;
-        this.registerEmail = registerEmail;
-        this.registerPassword = registerPassword;
-        this.registerPasswordAgain = registerPasswordAgain;
-    }
-
-    public RegisterJson()
-    {
-    }
-
-    public String getRegisterUsername()
-    {
-        return registerUsername;
-    }
-
-    public void setRegisterUsername(String registerUsername)
-    {
-        this.registerUsername = registerUsername;
-    }
-
-    public String getRegisterEmail()
-    {
-        return registerEmail;
-    }
-
-    public void setRegisterEmail(String registerEmail)
-    {
-        this.registerEmail = registerEmail;
-    }
-
-    public String getRegisterPassword()
-    {
-        return registerPassword;
-    }
-
-    public void setRegisterPassword(String registerPassword)
-    {
-        this.registerPassword = registerPassword;
-    }
-
-    public String getRegisterPasswordAgain()
-    {
-        return registerPasswordAgain;
-    }
-
-    public void setRegisterPasswordAgain(String registerPasswordAgain)
-    {
-        this.registerPasswordAgain = registerPasswordAgain;
-    }
+    
 }

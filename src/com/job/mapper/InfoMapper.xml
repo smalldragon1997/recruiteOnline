@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<!DOCTYPE mapper  
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.job.dao.InfoDao">
+   <insert id="insertInfo" parameterType="com.job.entity.Info" >
+   		insert into info(stu_id,name,sex,major,birthday,major_class,rewards,resume,except_sal)
+   		values
+   		(#{stuId},#{name},#{sex},#{major},#{birthday},#{majorClass},#{rewards},#{resume},#{exceptSal})
+   </insert>
+   <delete id="deleteInfo" parameterType="INTEGER">
+   		delete from info where stu_id=#{stuId}
+   </delete>
+   <update id="updateInfo" parameterType="com.job.entity.Info">
+   		update info 
+   		set name=#{name},sex=#{sex},major=#{major},birthday=#{birthday},major_class=#{majorClass},rewards=#{rewards},resume=#{resume},except_sal=#{exceptSal}
+   		where stu_id=#{stuId}
+   </update>
+   <select id="getInfo" parameterType="INTEGER" resultMap="info">
+   		select * from info where stu_id=#{stuId}
+   </select>
+  <!-- 配置映射字段 -->  
+    <resultMap type="com.job.entity.Info" id="info">  
+        <id property="stuId" column="stu_id"/>  
+        <result property="name" column="name"/>  
+        <result property="sex" column="sex"/>  
+        <result property="major" column="major"/>  
+        <result property="birthday" column="birthday"/>  
+        <result property="majorClass" column="major_class"/>  
+        <result property="rewards" column="rewards"/>  
+        <result property="resume" column="resume"/>  
+        <result property="exceptSal" column="except_sal"/>  
+    </resultMap>
+</mapper>  

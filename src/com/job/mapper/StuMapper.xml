@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<!DOCTYPE mapper  
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.job.dao.StuDao">
+   <insert id="insertStu" parameterType="com.job.entity.Stu" useGeneratedKeys="true" keyProperty="stuId" >
+   		insert into stu(email,password)
+   		values
+   		(#{email},#{password})
+   </insert>
+   <delete id="deleteStu" parameterType="INTEGER">
+   		delete from stu where stu_id=#{stuId}
+   </delete>
+   <update id="updateStu" parameterType="com.job.entity.Stu">
+   		update stu 
+   		set email=#{email},password=#{password}
+   		where stu_id=#{stuId}
+   </update>
+   <select id="getStu" parameterType="INTEGER" resultMap="stu">
+   		select * from stu where stu_id=#{stuId}
+   </select>
+   <select id="getStuByEmail" parameterType="STRING" resultMap="stu">
+   		select * from stu where email=#{email}
+   </select>
+  <!-- 配置映射字段 -->  
+    <resultMap type="com.job.entity.Stu" id="stu">  
+        <id property="stuId" column="stu_id"/>  
+        <result property="email" column="email"/>  
+        <result property="password" column="password"/>  
+    </resultMap>
+</mapper>  

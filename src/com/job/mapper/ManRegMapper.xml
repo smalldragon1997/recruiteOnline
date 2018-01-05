@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<!DOCTYPE mapper  
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.job.dao.ManRegDao">
+   <insert id="insertManReg" parameterType="com.job.entity.ManReg" >
+   		insert into man_reg(man_id,reg_time,reg_ip)
+   		values
+   		(#{manId},#{regTime},#{regIp})
+   </insert>
+   <delete id="deleteManReg" parameterType="INTEGER">
+   		delete from man_reg where man_id=#{manId}
+   </delete>
+   <update id="updateManReg" parameterType="com.job.entity.ManReg">
+   		update man_reg 
+   		set reg_time=#{regTime},reg_ip=#{regIp}
+   		where man_id=#{manId}
+   </update>
+   <select id="getManReg" parameterType="INTEGER" resultMap="manReg">
+   		select * from man_reg where man_id=#{manId}
+   </select>
+  <!-- 配置映射字段 -->  
+    <resultMap type="com.job.entity.ManReg" id="manReg">  
+        <id property="manId" column="man_id"/>  
+        <result property="regTime" column="reg_time"/>  
+        <result property="regIp" column="reg_ip"/>    
+    </resultMap>
+</mapper>

@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -18,9 +18,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
+	<link href="<%=path%>/css/bootstrap.css" rel="stylesheet">
+	<link href="<%=path%>/css/footer.css" rel="stylesheet">
+	<link href="<%=path%>/css/login.css" rel="stylesheet">
   </head>
   
-  <body>
-    This is my JSP page. <br>
+  <body background="<%=path%>/css/images/loginBackground.png" style="background-size:100%">
+  
+	<jsp:include page="/WEB-INF/jsp/public/header.jsp" flush="true"></jsp:include>
+	<jsp:include page="/WEB-INF/jsp/public/loginForm.jsp" flush="true"></jsp:include>
+	<jsp:include page="/WEB-INF/jsp/public/footer.jsp" flush="true"></jsp:include>
+	<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+	<script src="<%=path%>/js/jquery.js"></script>
+	<!-- 包括所有已编译的插件 -->
+	<script src="<%=path%>/js/bootstrap.min.js"></script>
   </body>
 </html>

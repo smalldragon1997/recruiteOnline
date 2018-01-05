@@ -21,12 +21,12 @@
      
    <!-- 2、视图解析器 -->  
    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-     <property name="prefix" value="/jsp/"/>  
+     <property name="prefix" value="/WEB-INF/jsp/"/>  
      <property name="suffix" value=".jsp"/>  
    </bean>  
      
    <!-- 3、自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器  -->  
-   <context:component-scan base-package="com.share.controller"/>  
+   <context:component-scan base-package="com.job.controller"/>  
    
    <!-- 4、支持文件上传  -->  
    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />

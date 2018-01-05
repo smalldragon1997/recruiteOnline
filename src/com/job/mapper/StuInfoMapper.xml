@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<!DOCTYPE mapper  
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.job.dao.StuInfoDao">
+   <insert id="insertStuInfo" parameterType="com.job.entity.StuInfo" >
+   		insert into stu_info(stu_id,operation,operate_time)
+   		values
+   		(#{stuId},#{operation},#{operateTime})
+   </insert>
+   <delete id="deleteStuInfo" parameterType="INTEGER">
+   		delete from stu_info where stu_id=#{stuId}
+   </delete>
+   <update id="updateStuInfo" parameterType="com.job.entity.StuInfo">
+   		update stu_info 
+   		set operation=#{operation},operate_time=#{operateTime}
+   		where stu_id=#{stuId}
+   </update>
+   <select id="getStuInfo" parameterType="INTEGER" resultMap="stuInfo">
+   		select * from stu_info where stu_id=#{stuId}
+   </select>
+  <!-- 配置映射字段 -->  
+    <resultMap type="com.job.entity.StuInfo" id="stuInfo">  
+        <id property="stuId" column="stu_id"/>  
+        <result property="operation" column="operation"/>  
+        <result property="operateTime" column="operate_time"/>    
+    </resultMap>
+</mapper>

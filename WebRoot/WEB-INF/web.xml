@@ -48,7 +48,8 @@
         </init-param>  
         <load-on-startup>1</load-on-startup><!--当值为正数或零时：Servlet容器先加载数值小的servlet，再依次加载其他数值大的servlet.-->  
         <async-supported>true</async-supported><!--设置是否启用异步支持-->  
-    </servlet>  
+    </servlet>
+  
     <servlet-mapping><!--用来定义servlet所对应的URL-->  
         <servlet-name>SpringMVC</servlet-name>  <!--指定servlet的名称-->  
         <url-pattern>/</url-pattern>        <!--指定servlet所对应的URL-->  

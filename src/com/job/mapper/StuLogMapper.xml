@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<!DOCTYPE mapper  
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.job.dao.StuLogDao">
+   <insert id="insertStuLog" parameterType="com.job.entity.StuLog" >
+   		insert into stu_log(stu_id,log_time,able_time)
+   		values
+   		(#{stuId},#{logTime},#{ableTime})
+   </insert>
+   <delete id="deleteStuLog" parameterType="INTEGER">
+   		delete from stu_log where stu_id=#{stuId}
+   </delete>
+   <update id="updateStuLog" parameterType="com.job.entity.StuLog">
+   		update stu_log 
+   		set log_time=#{logTime},able_time=#{ableTime}
+   		where stu_id=#{stuId}
+   </update>
+   <select id="getStuLog" parameterType="INTEGER" resultMap="stuLog">
+   		select * from stu_log where stu_id=#{stuId}
+   </select>
+  <!-- 配置映射字段 -->  
+    <resultMap type="com.job.entity.StuLog" id="stuLog">  
+        <id property="stuId" column="stu_id"/>  
+        <result property="logTime" column="log_time"/>  
+        <result property="ableTime" column="able_time"/>    
+    </resultMap>
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<!DOCTYPE mapper  
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.job.dao.StuRegDao">
+   <insert id="insertStuReg" parameterType="com.job.entity.StuReg" >
+   		insert into stu_reg(stu_id,reg_time,reg_ip)
+   		values
+   		(#{stuId},#{regTime},#{regIp})
+   </insert>
+   <delete id="deleteStuReg" parameterType="INTEGER">
+   		delete from stu_reg where stu_id=#{stuId}
+   </delete>
+   <update id="updateStuReg" parameterType="com.job.entity.StuReg">
+   		update stu_reg 
+   		set reg_time=#{regTime},reg_ip=#{regIp}
+   		where stu_id=#{stuId}
+   </update>
+   <select id="getStuReg" parameterType="INTEGER" resultMap="stuReg">
+   		select * from stu_reg where stu_id=#{stuId}
+   </select>
+  <!-- 配置映射字段 -->  
+    <resultMap type="com.job.entity.StuReg" id="stuReg">  
+        <id property="stuId" column="stu_id"/>  
+        <result property="regTime" column="reg_time"/>  
+        <result property="regIp" column="reg_ip"/>    
+    </resultMap>
+</mapper>
