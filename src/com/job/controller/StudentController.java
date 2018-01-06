@@ -101,6 +101,7 @@ public class StudentController {
 		int exceptSal = Integer.parseInt(request.getParameter("exceptSal"));
 		Info info = new Info(stuId,name,sex,major,birthday,majorClass,rewards,resume,exceptSal);
 		msgToView.setJsonData("info", info);
+		studentService.addStuInfo(msgToView);
 		return "platform";
 	}
 
@@ -119,6 +120,7 @@ public class StudentController {
 		int exceptSal = Integer.parseInt(request.getParameter("exceptSal"));
 		Info info = new Info(stuId,name,sex,major,birthday,majorClass,rewards,resume,exceptSal);
 		msgToView.setJsonData("info", info);
+		studentService.alterStuInfo(msgToView);
 		return "platform";
 	}
 
