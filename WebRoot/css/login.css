@@ -1,5 +1,18 @@
 .login{
-	position:fixed;
+	position:absolute;
 	width:100%;
-	bottom:30%;
+	top:300px;
+	display:none;
+}
+.mainPanel{
+	position:absolute;
+	width:100%;
+	top:200px;
+}
+.regForm{
+	display:none;
+	width:100%;
+	position:absolute;
+	top:150px;
+	
 }

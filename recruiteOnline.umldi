@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_bqpo4AGFEeiGxcWRJaxdlg" activeDiagram="_bqpo4QGFEeiGxcWRJaxdlg">
+  <model href="recruiteOnline.uml#_qb8akM37EdqwVrslYOdUDA"/>
+  <diagrams xmi:id="_bqpo4QGFEeiGxcWRJaxdlg" position="0,0" size="100,100" name="recruiteOnline" viewport="0,144">
+    <property xmi:id="_bq0oAAGFEeiGxcWRJaxdlg" key="pageFormatName" value="A4"/>
+    <property xmi:id="_bq0oAQGFEeiGxcWRJaxdlg" key="diagramWidth" value="840"/>
+    <property xmi:id="_bq0oAgGFEeiGxcWRJaxdlg" key="diagramHeight" value="1188"/>
+    <property xmi:id="_bq0oAwGFEeiGxcWRJaxdlg" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_bq0oBAGFEeiGxcWRJaxdlg" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_bq0oBQGFEeiGxcWRJaxdlg" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_bq0oBgGFEeiGxcWRJaxdlg" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_bq0oBwGFEeiGxcWRJaxdlg" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_bq0oCAGFEeiGxcWRJaxdlg" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_bqpo4gGFEeiGxcWRJaxdlg" presentation="org.topcased.modeler.uml.classdiagram">
+      <element href="recruiteOnline.uml#_qb8akM37EdqwVrslYOdUDA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_fnn0wAGFEeiGxcWRJaxdlg" position="34,35" size="648,444">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_fnn0wQGFEeiGxcWRJaxdlg">
+        <element href="recruiteOnline.uml#_fhLOgAGFEeiGxcWRJaxdlg"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_foGV4AGFEeiGxcWRJaxdlg" position="15,11" size="618,383">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foGV4QGFEeiGxcWRJaxdlg">
+          <element href="recruiteOnline.uml#_fhL1kAGFEeiGxcWRJaxdlg"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_foJZMAGFEeiGxcWRJaxdlg" position="15,11" size="588,322">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foJZMQGFEeiGxcWRJaxdlg">
+            <element href="recruiteOnline.uml#_fhL1kQGFEeiGxcWRJaxdlg"/>
+          </semanticModel>
+          <contained xsi:type="di:GraphNode" xmi:id="_foNDkAGFEeiGxcWRJaxdlg" position="15,11" size="558,-1">
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDkQGFEeiGxcWRJaxdlg">
+              <element href="recruiteOnline.uml#_fhNqwAGFEeiGxcWRJaxdlg"/>
+            </semanticModel>
+            <contained xsi:type="di:GraphNode" xmi:id="_foNDkgGFEeiGxcWRJaxdlg">
+              <property xmi:id="_foNDkwGFEeiGxcWRJaxdlg" key="eStructuralFeatureID" value="37"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDlAGFEeiGxcWRJaxdlg">
+                <element href="recruiteOnline.uml#_fhNqwAGFEeiGxcWRJaxdlg"/>
+              </semanticModel>
+              <contained xsi:type="di:GraphNode" xmi:id="_foNDlQGFEeiGxcWRJaxdlg" position="88,201">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDlgGFEeiGxcWRJaxdlg">
+                  <element href="recruiteOnline.uml#_fje7oAGFEeiGxcWRJaxdlg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_foNDlwGFEeiGxcWRJaxdlg" position="88,201">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDmAGFEeiGxcWRJaxdlg">
+                  <element href="recruiteOnline.uml#_fjosoAGFEeiGxcWRJaxdlg"/>
+                </semanticModel>
+              </contained>
+            </contained>
+            <contained xsi:type="di:GraphNode" xmi:id="_foNDmQGFEeiGxcWRJaxdlg">
+              <property xmi:id="_foNDmgGFEeiGxcWRJaxdlg" key="eStructuralFeatureID" value="47"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDmwGFEeiGxcWRJaxdlg">
+                <element href="recruiteOnline.uml#_fhNqwAGFEeiGxcWRJaxdlg"/>
+              </semanticModel>
+              <contained xsi:type="di:GraphNode" xmi:id="_foNDnAGFEeiGxcWRJaxdlg" position="88,201">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDnQGFEeiGxcWRJaxdlg">
+                  <element href="recruiteOnline.uml#_fj7AgAGFEeiGxcWRJaxdlg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_foNDngGFEeiGxcWRJaxdlg" position="88,201">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDnwGFEeiGxcWRJaxdlg">
+                  <element href="recruiteOnline.uml#_fkBHIAGFEeiGxcWRJaxdlg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_foNDoAGFEeiGxcWRJaxdlg" position="88,201">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDoQGFEeiGxcWRJaxdlg">
+                  <element href="recruiteOnline.uml#_fl8ZwQGFEeiGxcWRJaxdlg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_foNDogGFEeiGxcWRJaxdlg" position="88,201">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDowGFEeiGxcWRJaxdlg">
+                  <element href="recruiteOnline.uml#_fmB5UQGFEeiGxcWRJaxdlg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_foNDpAGFEeiGxcWRJaxdlg" position="88,201">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDpQGFEeiGxcWRJaxdlg">
+                  <element href="recruiteOnline.uml#_fmFjsAGFEeiGxcWRJaxdlg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_foNDpgGFEeiGxcWRJaxdlg" position="88,201">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDpwGFEeiGxcWRJaxdlg">
+                  <element href="recruiteOnline.uml#_fmJ1IAGFEeiGxcWRJaxdlg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_foNDqAGFEeiGxcWRJaxdlg" position="88,201">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDqQGFEeiGxcWRJaxdlg">
+                  <element href="recruiteOnline.uml#_fmM4cAGFEeiGxcWRJaxdlg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_foNDqgGFEeiGxcWRJaxdlg" position="88,201">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDqwGFEeiGxcWRJaxdlg">
+                  <element href="recruiteOnline.uml#_fmP7wAGFEeiGxcWRJaxdlg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_foNDrAGFEeiGxcWRJaxdlg" position="88,201">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDrQGFEeiGxcWRJaxdlg">
+                  <element href="recruiteOnline.uml#_fmTmIAGFEeiGxcWRJaxdlg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_foNDrgGFEeiGxcWRJaxdlg" position="88,201">
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_foNDrwGFEeiGxcWRJaxdlg">
+                  <element href="recruiteOnline.uml#_fmWpcAGFEeiGxcWRJaxdlg"/>
+                </semanticModel>
+              </contained>
+            </contained>
+          </contained>
+        </contained>
+      </contained>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

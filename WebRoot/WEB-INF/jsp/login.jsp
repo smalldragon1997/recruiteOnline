@@ -24,9 +24,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body  background="<%=path%>/css/images/loginBackground.png" style="background-size:100%">
 
-	<jsp:include page="/WEB-INF/jsp/public/header.jsp" flush="true"></jsp:include>     
-	<jsp:include page="/WEB-INF/jsp/public/loginForm.jsp" flush="true"></jsp:include>
+	<jsp:include page="/WEB-INF/jsp/public/header.jsp" flush="true"></jsp:include>  
+	<jsp:include page="/WEB-INF/jsp/public/slide.jsp" flush="true"></jsp:include>   
 	<jsp:include page="/WEB-INF/jsp/public/footer.jsp" flush="true"></jsp:include>
+	<jsp:include page="/WEB-INF/jsp/public/loginForm.jsp" flush="true"></jsp:include>
 	
 	<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
 	<script src="<%=path%>/js/jquery.js"></script>

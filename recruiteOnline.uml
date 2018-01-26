@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="recruiteOnline">
+  <packagedElement xmi:type="uml:Package" xmi:id="_fhLOgAGFEeiGxcWRJaxdlg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_fhL1kAGFEeiGxcWRJaxdlg" name="job">
+      <packagedElement xmi:type="uml:Package" xmi:id="_fhL1kQGFEeiGxcWRJaxdlg" name="controller">
+        <packagedElement xmi:type="uml:Class" xmi:id="_fhNqwAGFEeiGxcWRJaxdlg" name="ManagerController">
+          <ownedAttribute xmi:id="_fje7oAGFEeiGxcWRJaxdlg" name="managerService" visibility="package" type="_fjF6EQGFEeiGxcWRJaxdlg"/>
+          <ownedAttribute xmi:id="_fjosoAGFEeiGxcWRJaxdlg" name="publicService" visibility="package" type="_fjF6EgGFEeiGxcWRJaxdlg"/>
+          <ownedOperation xmi:id="_fj7AgAGFEeiGxcWRJaxdlg" name="getStudentInfo" visibility="public">
+            <ownedParameter xmi:id="_fj7AgQGFEeiGxcWRJaxdlg" name="request" type="_fjDd0wGFEeiGxcWRJaxdlg"/>
+            <ownedParameter xmi:id="_fj7AggGFEeiGxcWRJaxdlg" name="return" type="_fjFTBQGFEeiGxcWRJaxdlg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fkBHIAGFEeiGxcWRJaxdlg" name="getReleasedJobs" visibility="public">
+            <ownedParameter xmi:id="_fkBHIQGFEeiGxcWRJaxdlg" name="session" type="_fjEE4AGFEeiGxcWRJaxdlg"/>
+            <ownedParameter xmi:id="_fkBHIgGFEeiGxcWRJaxdlg" name="return" type="_fjFTBQGFEeiGxcWRJaxdlg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fl8ZwQGFEeiGxcWRJaxdlg" name="releaseJob" visibility="public">
+            <ownedParameter xmi:id="_fl9A0AGFEeiGxcWRJaxdlg" name="request" type="_fjDd0wGFEeiGxcWRJaxdlg"/>
+            <ownedParameter xmi:id="_fl9A0QGFEeiGxcWRJaxdlg" name="session" type="_fjEE4AGFEeiGxcWRJaxdlg"/>
+            <ownedParameter xmi:id="_fl9A0gGFEeiGxcWRJaxdlg" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fmB5UQGFEeiGxcWRJaxdlg" name="deleteJob" visibility="public">
+            <ownedParameter xmi:id="_fmB5UgGFEeiGxcWRJaxdlg" name="request" type="_fjDd0wGFEeiGxcWRJaxdlg"/>
+            <ownedParameter xmi:id="_fmB5UwGFEeiGxcWRJaxdlg" name="session" type="_fjEE4AGFEeiGxcWRJaxdlg"/>
+            <ownedParameter xmi:id="_fmB5VAGFEeiGxcWRJaxdlg" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fmFjsAGFEeiGxcWRJaxdlg" name="updateJob" visibility="public">
+            <ownedParameter xmi:id="_fmFjsQGFEeiGxcWRJaxdlg" name="request" type="_fjDd0wGFEeiGxcWRJaxdlg"/>
+            <ownedParameter xmi:id="_fmFjsgGFEeiGxcWRJaxdlg" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fmJ1IAGFEeiGxcWRJaxdlg" name="getUnreadResumes" visibility="public">
+            <ownedParameter xmi:id="_fmJ1IQGFEeiGxcWRJaxdlg" name="session" type="_fjEE4AGFEeiGxcWRJaxdlg"/>
+            <ownedParameter xmi:id="_fmJ1IgGFEeiGxcWRJaxdlg" name="return" type="_fjFTBQGFEeiGxcWRJaxdlg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fmM4cAGFEeiGxcWRJaxdlg" name="getOldResumes" visibility="public">
+            <ownedParameter xmi:id="_fmM4cQGFEeiGxcWRJaxdlg" name="session" type="_fjEE4AGFEeiGxcWRJaxdlg"/>
+            <ownedParameter xmi:id="_fmM4cgGFEeiGxcWRJaxdlg" name="return" type="_fjFTBQGFEeiGxcWRJaxdlg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fmP7wAGFEeiGxcWRJaxdlg" name="getInterestResumes" visibility="public">
+            <ownedParameter xmi:id="_fmP7wQGFEeiGxcWRJaxdlg" name="session" type="_fjEE4AGFEeiGxcWRJaxdlg"/>
+            <ownedParameter xmi:id="_fmP7wgGFEeiGxcWRJaxdlg" name="return" type="_fjFTBQGFEeiGxcWRJaxdlg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fmTmIAGFEeiGxcWRJaxdlg" name="readResume" visibility="public">
+            <ownedParameter xmi:id="_fmTmIQGFEeiGxcWRJaxdlg" name="request" type="_fjDd0wGFEeiGxcWRJaxdlg"/>
+            <ownedParameter xmi:id="_fmTmIgGFEeiGxcWRJaxdlg" name="return" type="_fjFTBQGFEeiGxcWRJaxdlg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fmWpcAGFEeiGxcWRJaxdlg" name="interestResume" visibility="public">
+            <ownedParameter xmi:id="_fmWpcQGFEeiGxcWRJaxdlg" name="request" type="_fjDd0wGFEeiGxcWRJaxdlg"/>
+            <ownedParameter xmi:id="_fmWpcgGFEeiGxcWRJaxdlg" name="return" type="_fjFTBQGFEeiGxcWRJaxdlg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fjFTAgGFEeiGxcWRJaxdlg" name="entity">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fjFTAwGFEeiGxcWRJaxdlg" name="Job"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fjFTBAGFEeiGxcWRJaxdlg" name="json">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fjFTBQGFEeiGxcWRJaxdlg" name="MsgJson"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fjF6EAGFEeiGxcWRJaxdlg" name="service">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fjF6EQGFEeiGxcWRJaxdlg" name="ManagerService"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fjF6EgGFEeiGxcWRJaxdlg" name="PublicService"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fjF6EwGFEeiGxcWRJaxdlg" name="tools">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fjF6FAGFEeiGxcWRJaxdlg" name="MyMsgJson"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_fjDd0AGFEeiGxcWRJaxdlg" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_fjDd0QGFEeiGxcWRJaxdlg" name="servlet">
+      <packagedElement xmi:type="uml:Package" xmi:id="_fjDd0gGFEeiGxcWRJaxdlg" name="http">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fjDd0wGFEeiGxcWRJaxdlg" name="HttpServletRequest"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fjEE4AGFEeiGxcWRJaxdlg" name="HttpSession"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_fjEE4QGFEeiGxcWRJaxdlg" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_fjEE4gGFEeiGxcWRJaxdlg" name="springframework">
+      <packagedElement xmi:type="uml:Package" xmi:id="_fjEE4wGFEeiGxcWRJaxdlg" name="beans">
+        <packagedElement xmi:type="uml:Package" xmi:id="_fjEE5AGFEeiGxcWRJaxdlg" name="factory">
+          <packagedElement xmi:type="uml:Package" xmi:id="_fjEE5QGFEeiGxcWRJaxdlg" name="annotation">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_fjEE5gGFEeiGxcWRJaxdlg" name="Autowired"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_fjEr8AGFEeiGxcWRJaxdlg" name="Qualifier"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fjEr8QGFEeiGxcWRJaxdlg" name="stereotype">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fjEr8gGFEeiGxcWRJaxdlg" name="Controller"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fjEr8wGFEeiGxcWRJaxdlg" name="web">
+        <packagedElement xmi:type="uml:Package" xmi:id="_fjEr9AGFEeiGxcWRJaxdlg" name="bind">
+          <packagedElement xmi:type="uml:Package" xmi:id="_fjEr9QGFEeiGxcWRJaxdlg" name="annotation">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_fjEr9gGFEeiGxcWRJaxdlg" name="RequestBody"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_fjFTAAGFEeiGxcWRJaxdlg" name="RequestMapping"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_fjFTAQGFEeiGxcWRJaxdlg" name="ResponseBody"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

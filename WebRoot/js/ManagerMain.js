@@ -383,7 +383,7 @@ function readResume(stuId,jobId){
 };
 //设置感兴趣
 function interestResume(stuId,jobId){
-	$('#panelName').text('对这个学生不感兴趣');
+	$('#panelName').text('对这个学生感兴趣');
 	$('#panelBody').text('');
 	$.ajax({
 		url : "/recruiteOnline/manager/interestResume?stuId="+stuId+'&jobId='+jobId,

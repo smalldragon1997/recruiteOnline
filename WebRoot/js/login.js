@@ -169,3 +169,10 @@ $(document).ready(function() {
 		});
 	});
 });
+//弹出注册窗口
+function regForm(){
+	$('#reg').fadeIn(100);
+};
+function regBack(){
+	$('#reg').fadeOut(100);
+};
