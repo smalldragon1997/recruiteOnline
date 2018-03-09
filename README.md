@@ -11,7 +11,7 @@ recruiteOnline 在线招聘管理系统
 ![Image text](https://raw.githubusercontent.com/smalldragon1997/myphoto/master/recruite/frame.png)
 
 系统功能：
-![Image text](https://raw.githubusercontent.com/smalldragon1997/myphoto/master/recruite/recruiteFuntion.png)
+![Image text](https://raw.githubusercontent.com/smalldragon1997/myphoto/master/recruite/recruiteFunction.png)
 
 数据库设计：
 ![Image text](https://raw.githubusercontent.com/smalldragon1997/myphoto/master/recruite/database.png)
@@ -19,7 +19,7 @@ recruiteOnline 在线招聘管理系统
 页面展示：
 
 登录页面：
-![Image text](https://raw.githubusercontent.com/smalldragon1997/myphoto/master/recruite/index.png)
+![Image text](https://raw.githubusercontent.com/smalldragon1997/myphoto/master/recruite/login.png)
 
 用户页面：
 ![Image text](https://raw.githubusercontent.com/smalldragon1997/myphoto/master/recruite/main.png)
